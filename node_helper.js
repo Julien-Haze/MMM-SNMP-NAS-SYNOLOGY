@@ -1,5 +1,5 @@
 /* Magic Mirror
- * Node Helper: {{MODULE_NAME}}
+ * Node Helper: MMM-SNMP-NAS-SYNOLOGY
  *
  * By {{AUTHOR_NAME}}
  * {{LICENSE}} Licensed.
