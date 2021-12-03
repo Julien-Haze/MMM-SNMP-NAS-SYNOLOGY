@@ -16,7 +16,6 @@ Module.register("{{MODULE_NAME}}", {
 	requiresVersion: "2.1.0", // Required version of MagicMirror
 
 	start: function() {
-		console.log ("ici");
 		var self = this;
 		var dataRequest = null;
 		var dataNotification = null;
@@ -43,7 +42,19 @@ Module.register("{{MODULE_NAME}}", {
 
 		var snmp = require ("net-snmp");
 
-		var session = snmp.createSession ("192.168.1.10", "perso");
+		var options = {
+			port: 161,
+			retries: 1,
+			timeout: 5000,
+			backoff: 1.0,
+			transport: "udp4",
+			trapPort: 162,
+			version: snmp.Version1,
+			backwardsGetNexts: true,
+			idBitsSize: 32
+		};
+
+		var session = snmp.createSession ("192.168.1.10", "perso", options);
 		var oids = ["1.3.6.1.2.1.1.5.0", "1.3.6.1.2.1.1.6.0"];
 
 
