@@ -1,35 +1,19 @@
-# MagicMirror-Module-Template
-This is a module to help developers to start building their own modules for the [MagicMirror](https://github.com/MichMich/MagicMirror). 
+# MagicMirror-MMM-NAS-SYNOLOGY
 
-There samples of code for:
-- External request
-- Config parameters
-- Custom URL path route
-- Passing of messages (NOTIFICATIONS)
+This MagicMirror mirror module monitore you NAS with SNMP protocol.
 
-Also this module include tasks for checking your code. For that you need install the developer dependencies.
+For this module to work you need to enable SNMP on your synology NAS and install SNMP on your device.
 
-```
-cd MI_MODULE_PATH && npm install 
-```
+Enable SNMP on your synology NAS
+ 
+Go toMain Menu>Control Panel >SNMP to enable SNMP service, which allows users to monitor
+Synology DiskStation network flow with the network management software.
 
-Run the `test` npm script
-```
-npm test
-```
-
-Current Tests:
-- [ESLint](http://eslint.org/) for linting the javascript
-- [stylelint](https://stylelint.io/) for linting the CSS with [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) as its base
-- [jsonlint](https://github.com/zaach/jsonlint) for linting the translation files
-- [markdownlint](https://github.com/DavidAnson/markdownlint) for checking the markdown files (`README.md`, `CHANGELOG.md`, `LICENSE.txt`)
-- [js-yaml](https://github.com/nodeca/js-yaml) to lint the `.travis.yml` (run through [grunt-yamllint](https://github.com/geedew/grunt-yamllint))
-
+You will be able to display informations like:
+ - Online
+ - Temps
+ - 
 
 ## Installation
 
-`bash -c "$(curl -sL https://raw.githubusercontent.com/roramirez/MagicMirror-Module-Template/master/create_module.sh)"`
-
-This creates a module example to start your development more easy.
-
-If you have any suggest, please let me know [by an issue](https://github.com/roramirez/MagicMirror-Module-Template/issues/new).
+npm install

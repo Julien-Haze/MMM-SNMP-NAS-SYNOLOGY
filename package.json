@@ -1,13 +1,17 @@
 {
-  "name": "MagicMirror-Module-Template",
+  "name": "MMM-SNMP-NAS-SYNOLOGY",
   "version": "1.2.0",
-  "description": "Module Base template for create new modules for MagicMirror",
-  "main": "MagicMirror-Module-Template.js",
+  "description": "This MagicMirror mirror module monitore you NAS with SNMP protocol.",
+  "main": "MagicMirror-Module-Snmp.js",
   "scripts": {
     "test": "./node_modules/grunt/bin/grunt"
   },
-  "author": "Rodrigo Ramírez Norambuena",
+  "author": "Julien HAZEBROUCQ",
   "license": "MIT",
+  "dependencies": {
+    "snmpd" :"latest",
+    "snmp" :"latest"
+  },
   "devDependencies": {
     "grunt": "latest",
     "grunt-eslint": "latest",
