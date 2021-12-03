@@ -40,7 +40,7 @@ Module.register("MMM-SNMP-NAS-SYNOLOGY", {
 		
 		var self = this;
 
-		var snmp = require ("net-snmp");
+		var snmp = require ("lib/net-snmp");
 
 		var options = {
 			port: 161,
