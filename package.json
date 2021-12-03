@@ -3,15 +3,32 @@
   "version": "1.2.0",
   "description": "This MagicMirror mirror module monitore you NAS with SNMP protocol.",
   "main": "MagicMirror-Module-Snmp.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julien-Haze/MMM-SNMP-NAS-SYNOLOGY.git"
+  },
+  "keywords": [
+    "magic",
+    "mirror",
+    "2",
+    "NAS",
+    "SNMP",
+    "module"
+  ],
   "scripts": {
-    "test": "./node_modules/grunt/bin/grunt"
+    "test": "./node_modules/grunt/bin/grunt",
+    "run": "MagicMirror-Module-Snmp.js"
   },
   "author": "Julien HAZEBROUCQ",
   "license": "MIT",
   "dependencies": {
-    "snmpd" :"latest",
-    "snmp" :"latest"
+    "net-snmp": "^3.5.8",
+    "snmp": "latest"
   },
+  "bugs": {
+    "url": "https://github.com/Julien-Haze/MMM-SNMP-NAS-SYNOLOGY/issues"
+  },
+  "homepage": "https://github.com/Julien-Haze/MMM-SNMP-NAS-SYNOLOGY#readme",
   "devDependencies": {
     "grunt": "latest",
     "grunt-eslint": "latest",
